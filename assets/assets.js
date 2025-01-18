@@ -100,26 +100,28 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Webinasia',
+        description: 'Web builder and designer for modern solutions.',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Apokaba',
+        description: 'A WordPress application to facilitate consultations with pharmacists at RSUD Lubuk Sikaping.',
+        link: 'apokaba.com',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'RT Administration',
+        description: 'An application for managing neighborhood administration.',
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'UI/UX Designing',
+        description: 'Creative UI/UX design for digital platforms.',
         bgImage: '/work-4.png',
-    },
+    }
 ]
+
 
 export const serviceData = [
     {
