@@ -102,22 +102,25 @@ export const workData = [
     {
         title: 'Webinasia',
         description: 'Web builder and designer for modern solutions.',
+        link: '#',
         bgImage: '/work-1.png',
     },
     {
         title: 'Apokaba',
-        description: 'A WordPress application to facilitate consultations with pharmacists at RSUD Lubuk Sikaping.',
-        link: 'apokaba.com',
+        description: 'A WordPress application consultations with pharmacists',
+        link: 'https://www.apokaba.com/',
         bgImage: '/work-2.png',
     },
     {
         title: 'RT Administration',
         description: 'An application for managing neighborhood administration.',
+        link: '#',
         bgImage: '/work-3.png',
     },
     {
         title: 'UI/UX Designing',
         description: 'Creative UI/UX design for digital platforms.',
+        link: 'https://www.figma.com/design/XuWF5EBpWEEZDdjIbFCxv8/Webinasia-Website?node-id=0-1&t=5gXvpDo7pDbHI2FK-1',
         bgImage: '/work-4.png',
     }
 ]

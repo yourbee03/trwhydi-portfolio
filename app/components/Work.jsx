@@ -45,9 +45,15 @@ function Work(isDarkMode) {
                 <h2 className="font-semibold">{project.title}</h2>
                 <p className="text-sm text-gray-500">{project.description}</p>
               </div>
-              <div className='border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
+            <div>
+              <button 
+              onClick={() => window.open(project.link, '_blank', 'noopener,noreferrer')} 
+              className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+              >
                 <Image src={assets.send_icon} alt="send icon" className="w-5" />
-              </div>
+              </button>
+            </div>
+
             </div>
           </motion.div>
         ))}
@@ -56,7 +62,7 @@ function Work(isDarkMode) {
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{delay: 1.1, duration: 0.5}}
-      href={project.link} className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover'>
+      href="https://github.com/yourbee03?tab=repositories" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover'>
         Show more <Image src={isDarkMode ? assets.right_arrow_bold : assets.right_arrow_bold_dark}alt='Right arrow'
         className='w-4 ml-2' />
       </motion.a>
