@@ -126,6 +126,12 @@ export const workData = [
         bgImage: '/work-warung-backend.svg',
     },
     {
+        title: 'Apokaba',
+        description: 'Pharmacist consultation & medication education site for RSUD Tuanku Imam Bonjol.',
+        link: 'https://www.apokaba.com/',
+        bgImage: '/work-2.png',
+    },
+    {
         title: 'Email Generator Pro',
         description: 'Generate Gmail dot & plus email variants in bulk for testing.',
         link: 'https://github.com/yourbee03/gmail-dot-trick',
