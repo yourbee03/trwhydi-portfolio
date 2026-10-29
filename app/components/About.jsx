@@ -66,7 +66,7 @@ function About({ isDarkMode }) {
         className="mb-10 max-w-2xl font-Ovo text-sm sm:text-base"
         >
         Hello, my name is Tri Wahyudi, a Software Engineering Technology student at Politeknik Negeri Padang. 
-        With a strong foundation in Information Technology, I am passionate about creating innovative solutions in Cloud Computing, Web Development, Mobile Development, UI/UX Design, and Database Management. 
+        With a strong foundation in Information Technology, I am passionate about creating innovative solutions in Cloud Computing, Web Development, Mobile Development, Front End Development, Back End Development, and Database Management. 
         I am currently pursuing my diploma while actively contributing to various academic and professional projects.
         </motion.p>
 

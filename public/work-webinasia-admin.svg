@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#065f46"/>
+      <stop offset="1" stop-color="#134e4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <circle cx="700" cy="680" r="160" fill="#ffffff" opacity="0.06"/>
+  <circle cx="100" cy="110" r="130" fill="#ffffff" opacity="0.07"/>
+  <!-- dashboard window -->
+  <g>
+    <rect x="150" y="170" width="500" height="420" rx="22" fill="#ecfdf5"/>
+    <rect x="150" y="170" width="128" height="420" rx="22" fill="#064e3b"/>
+    <circle cx="214" cy="222" r="24" fill="#34d399"/>
+    <rect x="176" y="282" width="76" height="16" rx="8" fill="#a7f3d0" opacity="0.85"/>
+    <rect x="176" y="322" width="76" height="16" rx="8" fill="#a7f3d0" opacity="0.5"/>
+    <rect x="176" y="362" width="76" height="16" rx="8" fill="#a7f3d0" opacity="0.5"/>
+    <rect x="176" y="402" width="76" height="16" rx="8" fill="#a7f3d0" opacity="0.5"/>
+    <!-- stat cards -->
+    <rect x="306" y="200" width="150" height="76" rx="12" fill="#ffffff"/>
+    <rect x="480" y="200" width="142" height="76" rx="12" fill="#ffffff"/>
+    <rect x="322" y="222" width="70" height="14" rx="7" fill="#6ee7b7"/>
+    <rect x="322" y="246" width="46" height="14" rx="7" fill="#065f46"/>
+    <rect x="496" y="222" width="70" height="14" rx="7" fill="#6ee7b7"/>
+    <rect x="496" y="246" width="46" height="14" rx="7" fill="#065f46"/>
+    <!-- bar chart -->
+    <rect x="306" y="306" width="316" height="252" rx="12" fill="#ffffff"/>
+    <g fill="#10b981">
+      <rect x="340" y="470" width="38" height="58" rx="6"/>
+      <rect x="398" y="430" width="38" height="98" rx="6" fill="#34d399"/>
+      <rect x="456" y="452" width="38" height="76" rx="6"/>
+      <rect x="514" y="398" width="38" height="130" rx="6" fill="#059669"/>
+      <rect x="572" y="424" width="38" height="104" rx="6" fill="#6ee7b7"/>
+    </g>
+    <rect x="330" y="528" width="268" height="6" rx="3" fill="#d1fae5"/>
+  </g>
+  <text x="400" y="686" font-family="Verdana, sans-serif" font-size="37" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="2">WEBINASIA</text>
+  <text x="400" y="724" font-family="Verdana, sans-serif" font-size="24" fill="#a7f3d0" text-anchor="middle" letter-spacing="6">ADMIN DASHBOARD</text>
+</svg>

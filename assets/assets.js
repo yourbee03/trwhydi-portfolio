@@ -19,6 +19,13 @@ import laravel from './laravel.png';
 import react from './react.png';
 import nextjs from './nextjs.png';
 import html from './html.png';
+import nodejs from './nodejs.svg';
+import typescript from './typescript.svg';
+import tailwindcss from './tailwindcss.svg';
+import express from './express.svg';
+import github from './github.svg';
+import postman from './postman.svg';
+import mobile_icon from './mobile-icon.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
@@ -69,6 +76,13 @@ export const assets = {
     react,
     nextjs,
     html,
+    nodejs,
+    typescript,
+    tailwindcss,
+    express,
+    github,
+    postman,
+    mobile_icon,
     right_arrow_white,
     logo,
     logo_dark,
@@ -100,28 +114,40 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Webinasia',
-        description: 'Web builder and designer for modern solutions.',
-        link: '#',
-        bgImage: '/work-1.png',
+        title: 'Warung Mie Balap — Frontend',
+        description: 'Food ordering web app for a noodle stall, built with TypeScript.',
+        link: 'https://github.com/yourbee03/frontend-warung-mie-balap',
+        bgImage: '/work-warung-frontend.svg',
     },
     {
-        title: 'Apokaba',
-        description: 'A WordPress application consultations with pharmacists',
-        link: 'https://www.apokaba.com/',
-        bgImage: '/work-2.png',
+        title: 'Warung Mie Balap — Backend',
+        description: 'REST API backend powering the Warung Mie Balap web app.',
+        link: 'https://github.com/yourbee03/backend-warung-mie-balap',
+        bgImage: '/work-warung-backend.svg',
     },
     {
-        title: 'RT Administration',
-        description: 'An application for managing neighborhood administration.',
-        link: '#',
-        bgImage: '/work-3.png',
+        title: 'Email Generator Pro',
+        description: 'Generate Gmail dot & plus email variants in bulk for testing.',
+        link: 'https://github.com/yourbee03/gmail-dot-trick',
+        bgImage: '/work-email-generator.svg',
     },
     {
-        title: 'UI/UX Designing',
-        description: 'Creative UI/UX design for digital platforms.',
-        link: 'https://www.figma.com/design/XuWF5EBpWEEZDdjIbFCxv8/Webinasia-Website?node-id=0-1&t=5gXvpDo7pDbHI2FK-1',
-        bgImage: '/work-4.png',
+        title: 'Webinasia — Frontend',
+        description: 'Company website frontend for the Webinasia platform.',
+        link: 'https://github.com/yourbee03/webinasia-frontend',
+        bgImage: '/work-webinasia-frontend.svg',
+    },
+    {
+        title: 'Webinasia — Admin',
+        description: 'Admin dashboard for managing Webinasia content and data.',
+        link: 'https://github.com/yourbee03/webinasia-admin',
+        bgImage: '/work-webinasia-admin.svg',
+    },
+    {
+        title: 'REST API',
+        description: 'RESTful CRUD API built with Java.',
+        link: 'https://github.com/yourbee03/REST_API',
+        bgImage: '/work-rest-api.svg',
     }
 ]
 
@@ -131,6 +157,18 @@ export const serviceData = [
         icon: assets.web_icon,
         title: 'Web Development',
         description: 'Menyediakan layanan pengembangan website profesional dengan teknologi terbaru untuk kebutuhan bisnis Anda.',
+        link: ''
+    },
+    {
+        icon: assets.code_icon,
+        title: 'Front End Development',
+        description: 'Membangun tampilan website yang interaktif, cepat, dan responsif menggunakan React, Next.js, dan TypeScript.',
+        link: ''
+    },
+    {
+        icon: assets.sql,
+        title: 'Back End Development',
+        description: 'Mengembangkan logika server, REST API, dan database yang aman dan scalable menggunakan Node.js dan Express.',
         link: ''
     },
     {
@@ -162,6 +200,12 @@ export const serviceData = [
         title: 'Cloud Computing',
         description: 'Solusi cloud computing untuk mendukung efisiensi dan skalabilitas infrastruktur IT Anda.',
         link: ''
+    },
+    {
+        icon: assets.mobile_icon,
+        title: 'Responsive Web Design',
+        description: 'Memastikan website tampil optimal dan nyaman digunakan di semua ukuran layar, dari HP sampai desktop.',
+        link: ''
     }
 ]
 
@@ -172,13 +216,9 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.js, 
-    assets.vue, 
-    assets.css, 
-    assets.prisma, 
-    assets.sql, 
-    assets.laravel, 
-    assets.react, 
-    assets.nextjs, 
-    assets.html
+    assets.vscode, assets.html, assets.css, assets.js, assets.typescript,
+    assets.react, assets.nextjs, assets.vue, assets.tailwindcss,
+    assets.nodejs, assets.express, assets.prisma, assets.mongodb,
+    assets.sql, assets.firebase, assets.laravel, assets.git, assets.github,
+    assets.figma, assets.postman
 ];

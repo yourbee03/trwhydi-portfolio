@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <circle cx="690" cy="140" r="140" fill="#ffffff" opacity="0.08"/>
+  <circle cx="100" cy="690" r="180" fill="#ffffff" opacity="0.06"/>
+  <!-- dotted variant chips -->
+  <g font-family="Verdana, sans-serif" font-size="25" fill="#dbeafe">
+    <rect x="118" y="150" width="238" height="52" rx="26" fill="#ffffff" opacity="0.14"/>
+    <text x="140" y="185">u.ser@mail</text>
+    <rect x="452" y="150" width="238" height="52" rx="26" fill="#ffffff" opacity="0.14"/>
+    <text x="474" y="185">us.er@mail</text>
+    <rect x="118" y="592" width="238" height="52" rx="26" fill="#ffffff" opacity="0.14"/>
+    <text x="140" y="627">user+1@mail</text>
+    <rect x="452" y="592" width="238" height="52" rx="26" fill="#ffffff" opacity="0.14"/>
+    <text x="474" y="627">u.s.e.r@mail</text>
+  </g>
+  <!-- envelope -->
+  <g>
+    <rect x="180" y="290" width="440" height="220" rx="20" fill="#ffffff"/>
+    <path d="M180 312 L400 452 L620 312 L620 290 a20 20 0 0 0 -20 -20 H200 a20 20 0 0 0 -20 20 z" fill="#bfdbfe"/>
+    <path d="M180 492 L348 372 M620 492 L452 372" stroke="#93c5fd" stroke-width="10"/>
+    <circle cx="400" cy="400" r="46" fill="#2563eb"/>
+    <text x="400" y="418" font-family="Verdana, sans-serif" font-size="52" font-weight="bold" fill="#ffffff" text-anchor="middle">@</text>
+  </g>
+  <text x="400" y="726" font-family="Verdana, sans-serif" font-size="37" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="2">EMAIL GENERATOR PRO</text>
+</svg>

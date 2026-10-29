@@ -34,7 +34,7 @@ function Header(isDarkMode) {
         whileInView={{opacity: 1}}
         transition={{duration: 0.6, delay: 0.7}}
         className='max-w-2xl mx-auto font-Ovo'>
-            I am a Software Engineering Technology student at Politeknik Negeri Padang with a passion for Cloud Computing, Web Development, Mobile Development, and UI/UX Design.
+            I am a Software Engineering Technology student at Politeknik Negeri Padang with skills as a Front End Developer and Back End Developer, and a passion for Cloud Computing and Web Development.
         </motion.p>
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
             <motion.a href="#contact"
