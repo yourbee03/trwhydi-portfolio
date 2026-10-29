@@ -129,7 +129,7 @@ export const workData = [
         title: 'Apokaba',
         description: 'Pharmacist consultation & medication education site for RSUD Tuanku Imam Bonjol.',
         link: 'https://www.apokaba.com/',
-        bgImage: '/work-2.png',
+        bgImage: '/work-apokaba.svg',
     },
     {
         title: 'Email Generator Pro',
