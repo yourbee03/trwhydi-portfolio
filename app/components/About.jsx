@@ -1,9 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import { assets, infoList, toolsData } from '@/assets/assets'
+import { translations } from '@/assets/translations'
 import { motion } from "motion/react"
 
-function About({ isDarkMode }) {
+function About({ isDarkMode, lang }) {
+  const t = translations[lang].about;
   return (
     <div id="about" className="w-full px-6 md:px-[12%] py-10 scroll-mt-20">
         <motion.div 
@@ -18,7 +20,7 @@ function About({ isDarkMode }) {
         transition={{delay: 0.3, duration: 0.5}}
         className="mb-2 text-lg font-Ovo"
         >
-        Introduction
+        {t.intro}
         </motion.h4>
         <motion.h2 
         initial={{y: -20, opacity: 0}}
@@ -26,7 +28,7 @@ function About({ isDarkMode }) {
         transition={{delay: 0.6, duration: 0.5}}
         className="text-3xl md:text-5xl font-Ovo"
         >
-        About Me
+        {t.title}
         </motion.h2>
         </motion.div>
 
@@ -65,9 +67,7 @@ function About({ isDarkMode }) {
         transition={{duration: 0.7}}
         className="mb-10 max-w-2xl font-Ovo text-sm sm:text-base"
         >
-        Hello, my name is Tri Wahyudi, a Software Engineering Technology student at Politeknik Negeri Padang. 
-        With a strong foundation in Information Technology, I am passionate about creating innovative solutions in Cloud Computing, Web Development, Mobile Development, Front End Development, Back End Development, and Database Management. 
-        I am currently pursuing my diploma while actively contributing to various academic and professional projects.
+        {t.description}
         </motion.p>
 
 
@@ -77,7 +77,7 @@ function About({ isDarkMode }) {
             transition={{delay: 0.2, duration: 0.7}}
             className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 max-w-2xl"
         >
-        {infoList.map(({ icon, iconDark, title, description }, index) => (
+        {infoList.map(({ icon, iconDark }, index) => (
         <motion.li
         key={index}
         initial={{ y: 20, opacity: 0 }}
@@ -88,11 +88,11 @@ function About({ isDarkMode }) {
         >
             <Image
             src={isDarkMode ? iconDark : icon}
-            alt={title}
+            alt={t.info[index].title}
             className="w-6 sm:w-7 mt-2"
             />
-            <h3 className="my-2 text-sm sm:text-base font-semibold dark:text-white">{title}</h3>
-            <p className="text-xs sm:text-sm text-gray-600 dark:text-white/80">{description}</p>
+            <h3 className="my-2 text-sm sm:text-base font-semibold dark:text-white">{t.info[index].title}</h3>
+            <p className="text-xs sm:text-sm text-gray-600 dark:text-white/80">{t.info[index].description}</p>
         </motion.li>
         ))}
         </motion.ul>
@@ -104,7 +104,7 @@ function About({ isDarkMode }) {
             transition={{delay: 0.4, duration: 0.7}}
             className="my-6 text-gray-700 font-Ovo text-sm sm:text-base dark:text-white"
         >
-            Tools I Use
+            {t.toolsTitle}
         </motion.h4>
         <motion.ul 
         initial={{opacity: 0, y: 20}}

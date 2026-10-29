@@ -1,8 +1,10 @@
 import { assets } from '@/assets/assets';
+import { translations } from '@/assets/translations';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
-const Navbar = ({isDarkMode, setIsDarkMode}) => {
+const Navbar = ({isDarkMode, setIsDarkMode, lang, setLang}) => {
+    const t = translations[lang].nav;
     const [isScroll, setIsScroll] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -49,14 +51,18 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                         isScroll ? '' : 'bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent'
                     }`}
                 >
-                    <li><a className="font-Ovo" href="#top">Home</a></li>
-                    <li><a className="font-Ovo" href="#about">About me</a></li>
-                    <li><a className="font-Ovo" href="#services">Service</a></li>
-                    <li><a className="font-Ovo" href="#work">My Work</a></li>
-                    <li><a className="font-Ovo" href="#contact">Contact me</a></li>
+                    <li><a className="font-Ovo" href="#top">{t.home}</a></li>
+                    <li><a className="font-Ovo" href="#about">{t.about}</a></li>
+                    <li><a className="font-Ovo" href="#services">{t.services}</a></li>
+                    <li><a className="font-Ovo" href="#work">{t.work}</a></li>
+                    <li><a className="font-Ovo" href="#contact">{t.contactMe}</a></li>
                 </ul>
 
                 <div className="flex items-center gap-4">
+                    <div className="flex items-center rounded-full border border-gray-500 dark:border-white/50 overflow-hidden font-Ovo text-sm" role="group" aria-label="Language">
+                        <button onClick={() => setLang('en')} className={`px-3 py-1 transition-colors ${lang === 'en' ? 'bg-black text-white dark:bg-white dark:text-black' : 'text-gray-500 dark:text-white/60'}`}>EN</button>
+                        <button onClick={() => setLang('id')} className={`px-3 py-1 transition-colors ${lang === 'id' ? 'bg-black text-white dark:bg-white dark:text-black' : 'text-gray-500 dark:text-white/60'}`}>ID</button>
+                    </div>
                     <button onClick={()=> setIsDarkMode(prev => !prev)}>
                         <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt="Dark Mode Toggle" className="w-6" />
                     </button>
@@ -64,7 +70,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                         href="#contact"
                         className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50"
                     >
-                        Contact
+                        {t.contact}
                         <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} alt="Arrow Icon" className="w-3" />
                     </a>
                     <button className="block md:hidden ml-3" onClick={openMenu}>
@@ -80,11 +86,11 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                     <div className="absolute right-6 top-6" onClick={closeMenu}>
                         <Image src={isDarkMode ? assets.close_white : assets.close_black} alt="Close Menu Icon" className="w-5 cursor-pointer" />
                     </div>
-                    <li><a className="font-Ovo" onClick={closeMenu} href="#top">Home</a></li>
-                    <li><a className="font-Ovo" onClick={closeMenu} href="#about">About me</a></li>
-                    <li><a className="font-Ovo" onClick={closeMenu} href="#services">Service</a></li>
-                    <li><a className="font-Ovo" onClick={closeMenu} href="#work">My Work</a></li>
-                    <li><a className="font-Ovo" onClick={closeMenu} href="#contact">Contact me</a></li>
+                    <li><a className="font-Ovo" onClick={closeMenu} href="#top">{t.home}</a></li>
+                    <li><a className="font-Ovo" onClick={closeMenu} href="#about">{t.about}</a></li>
+                    <li><a className="font-Ovo" onClick={closeMenu} href="#services">{t.services}</a></li>
+                    <li><a className="font-Ovo" onClick={closeMenu} href="#work">{t.work}</a></li>
+                    <li><a className="font-Ovo" onClick={closeMenu} href="#contact">{t.contactMe}</a></li>
                 </ul>
             </nav>
         </>

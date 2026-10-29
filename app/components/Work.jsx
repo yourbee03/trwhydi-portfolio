@@ -1,8 +1,10 @@
 import { workData, assets } from '@/assets/assets';
+import { translations } from '@/assets/translations';
 import Image from 'next/image';
 import React from 'react';
 import { motion } from "motion/react"
-function Work(isDarkMode) {
+function Work({ isDarkMode, lang }) {
+  const t = translations[lang].work;
   return (
     <motion.div 
     initial={{opacity: 0}}
@@ -13,18 +15,18 @@ function Work(isDarkMode) {
       initial={{y: -20, opacity: 0}}
       whileInView={{y: 0, opacity: 1}}
       transition={{delay: 0.3, duration: 0.5}}
-      className="text-center mb-2 text-lg font-Ovo">My Portfolio</motion.h4>
+      className="text-center mb-2 text-lg font-Ovo">{t.portfolio}</motion.h4>
       <motion.h2 
       initial={{y: -20, opacity: 0}}
       whileInView={{y: 0, opacity: 1}}
       transition={{delay: 0.5, duration: 0.5}}
-      className="text-center text-5xl font-Ovo">My Latest Work</motion.h2>
+      className="text-center text-5xl font-Ovo">{t.title}</motion.h2>
       <motion.p 
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{delay: 0.7, duration: 0.5}}
       className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-        Welcome to my portfolio! Here are some of my recent projects.
+        {t.intro}
       </motion.p>
 
       <motion.div 
@@ -43,7 +45,7 @@ function Work(isDarkMode) {
             <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
               <div>
                 <h2 className="font-semibold">{project.title}</h2>
-                <p className="text-sm text-gray-500">{project.description}</p>
+                <p className="text-sm text-gray-500">{t.items[index].description}</p>
               </div>
             <div>
               <button 
@@ -63,7 +65,7 @@ function Work(isDarkMode) {
       whileInView={{opacity: 1}}
       transition={{delay: 1.1, duration: 0.5}}
       href="https://github.com/yourbee03?tab=repositories" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover'>
-        Show more <Image src={isDarkMode ? assets.right_arrow_bold : assets.right_arrow_bold_dark}alt='Right arrow'
+        {t.showMore} <Image src={isDarkMode ? assets.right_arrow_bold : assets.right_arrow_bold_dark} alt='Right arrow'
         className='w-4 ml-2' />
       </motion.a>
     </motion.div>

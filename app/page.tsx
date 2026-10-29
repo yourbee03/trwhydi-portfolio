@@ -12,6 +12,21 @@ import { useEffect, useState } from 'react';
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [lang, setLang] = useState<'en' | 'id'>('en');
+
+  // Initialize language from localStorage
+  useEffect(() => {
+    const savedLang = localStorage.getItem('lang');
+    if (savedLang === 'id' || savedLang === 'en') {
+      setLang(savedLang);
+    }
+  }, []);
+
+  // Persist language choice
+  useEffect(() => {
+    localStorage.setItem('lang', lang);
+    document.documentElement.lang = lang;
+  }, [lang]);
 
   // Initialize dark mode based on localStorage or system preferences
   useEffect(() => {
@@ -38,13 +53,13 @@ export default function Home() {
 
   return (
     <>
-      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Header isDarkMode={isDarkMode} />
-      <About isDarkMode={isDarkMode} />
-      <Services isDarkMode={isDarkMode} />
-      <Work isDarkMode={isDarkMode} />
-      <Contact isDarkMode={isDarkMode} />
-      <Footer isDarkMode={isDarkMode} />
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} lang={lang} setLang={setLang} />
+      <Header lang={lang} />
+      <About isDarkMode={isDarkMode} lang={lang} />
+      <Services lang={lang} />
+      <Work isDarkMode={isDarkMode} lang={lang} />
+      <Contact lang={lang} />
+      <Footer isDarkMode={isDarkMode} lang={lang} />
     </>
   );
 }
