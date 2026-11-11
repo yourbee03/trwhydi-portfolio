@@ -55,6 +55,7 @@ export const translations = {
                 { description: 'Company website frontend for the Webinasia platform.' },
                 { description: 'Admin dashboard for managing Webinasia content and data.' },
                 { description: 'RESTful CRUD API built with Java.' },
+                { description: 'Bangkit capstone team app that identifies why a baby is crying — my role: Cloud Computing.' },
             ],
         },
         contact: {
@@ -128,6 +129,7 @@ export const translations = {
                 { description: 'Frontend website perusahaan untuk platform Webinasia.' },
                 { description: 'Dashboard admin untuk mengelola konten dan data Webinasia.' },
                 { description: 'REST API CRUD yang dibangun dengan Java.' },
+                { description: 'Aplikasi tim capstone Bangkit untuk mengenali penyebab bayi menangis — bagian saya: Cloud Computing.' },
             ],
         },
         contact: {

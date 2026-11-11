@@ -154,6 +154,12 @@ export const workData = [
         description: 'RESTful CRUD API built with Java.',
         link: 'https://github.com/yourbee03/REST_API',
         bgImage: '/work-rest-api.svg',
+    },
+    {
+        title: 'Criby',
+        description: 'Bangkit capstone team app that identifies why a baby is crying — my role: Cloud Computing.',
+        link: 'https://github.com/wahyudhiasatwika/Criby',
+        bgImage: '/work-criby.svg',
     }
 ]
 
